@@ -33,5 +33,5 @@
   "scripts": {
     "heroku-postbuild": "npm install --production",
     "start": "npx nodemon todos.js"
-  },
+  }
 }
