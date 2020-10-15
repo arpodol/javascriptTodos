@@ -30,7 +30,7 @@ app.use(
     name: "launch-school-todos-session-id",
     resave: false,
     saveUninitialized: true,
-    secret: process.env.SECRET,
+    secret: config.SECRET,
     store: new LokiStore({}),
   })
 );
