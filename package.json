@@ -7,11 +7,13 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "npx nodemon todos.js"
+    "heroku-postbuild": "npm install --production",
+    "start": "secrethub run --secrets-dir raadtester/todo/production -- npx nodemon todos.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@secrethub/cli": "^0.41.2",
     "nodemon": "^1.19.4"
   },
   "dependencies": {
@@ -29,9 +31,5 @@
   "engines": {
     "node": "12.18.1",
     "npm": "6.14.5"
-  },
-  "scripts": {
-    "heroku-postbuild": "npm install --production",
-    "start": "npx nodemon todos.js"
   }
 }
