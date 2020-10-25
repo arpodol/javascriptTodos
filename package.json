@@ -13,10 +13,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@secrethub/cli": "^0.41.2",
     "nodemon": "^1.19.4"
   },
   "dependencies": {
+    "@secrethub/cli": "^0.41.2",
     "bcrypt": "^5.0.0",
     "connect-loki": "^1.1.0",
     "dotenv": "^8.2.0",
